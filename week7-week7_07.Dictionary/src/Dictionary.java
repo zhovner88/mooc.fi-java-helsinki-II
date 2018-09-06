@@ -28,7 +28,7 @@ public class Dictionary {
     }
 
     public ArrayList<String> translationList() {
-        ArrayList<String> listOfStrings = new ArrayList<>();
+        ArrayList<String> listOfStrings = new ArrayList<String>();
         for(Map.Entry<String, String> entry: myDictionary.entrySet()) {
             String key = entry.getKey();
             String value = entry.getValue();
