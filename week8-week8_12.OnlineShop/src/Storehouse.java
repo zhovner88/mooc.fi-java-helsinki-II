@@ -29,10 +29,8 @@ public class Storehouse {
     }
 
     public int price(String product) {
-        for (String key: prices.keySet()) {
-            if (product.equals(key)) {
-                return prices.get(key);
-            }
+        if (this.storehouse_stock.containsKey(product)) {
+            return this.prices.get(product);
         }
         return -99;
     }
