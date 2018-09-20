@@ -25,7 +25,7 @@ public class Airport {
         flights.add(new Flight(flightID, Departure, destination));
     }
 
-    // prints all plances
+    // prints all planes
 
     public void printPlanes() {
         for (Airplane plane:planesPool) {
